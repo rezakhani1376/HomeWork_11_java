@@ -1,3 +1,4 @@
+package main;
 
 abstract class Animal {
     private String name;

@@ -1,3 +1,8 @@
+package main;
+
+import main.Animal;
+import main.BreedType;
+
 public class Cat extends Animal {
     private BreedType breedType;
 
@@ -16,7 +21,7 @@ public class Cat extends Animal {
 
     @Override
     public String toString() {
-        return "Cat{" +
+        return "main.Cat{" +
                 " name= " + super.getName() +
                 ", breedType=" + breedType +
                 '}';

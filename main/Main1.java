@@ -1,3 +1,8 @@
+package main;
+
+import main.Animal;
+import main.BreedType;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
