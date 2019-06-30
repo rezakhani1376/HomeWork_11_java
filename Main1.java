@@ -34,7 +34,7 @@ public class Main1 {
                 new Cat("cat49", BreedType.Korean_Bobtail), new Cat("cat50", BreedType.Korn_Ja) );
 
         Function<Cat, BreedType> change = Cat::getBreedType;
-        List sdgsdgg = animals.stream().filter(cat -> {
+        List breedTypes = animals.stream().filter(cat -> {
             if (cat instanceof Cat) {
                 if (((Cat) cat).getBreedType().toString().startsWith("A") ||
                         ((Cat) cat).getBreedType().toString().startsWith("C") ||
@@ -45,6 +45,6 @@ public class Main1 {
         }).filter(cat -> Integer.parseInt(cat.getName().substring(3)) % 2 == 0)
                 .map(c -> change.apply((Cat) c)).collect(Collectors.toList());
 
-        System.out.println(sdgsdgg);
+        System.out.println(breedTypes);
     }
 }
